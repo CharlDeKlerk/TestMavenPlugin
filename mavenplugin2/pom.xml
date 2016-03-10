@@ -18,6 +18,10 @@
     <mule.munit.support.version>3.7.1</mule.munit.support.version>
     </properties>
 
+	<scm>
+	    <connection>scm:git:https://github.com/CharlDeKlerk/TestMavenPlugin.git/</connection>
+	    <developerConnection>scm:git:https://github.com/CharlDeKlerk/TestMavenPlugin.git</developerConnection>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
