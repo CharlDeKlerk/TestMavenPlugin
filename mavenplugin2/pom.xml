@@ -75,7 +75,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		<plugin>
+			<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
                 <artifactId>munit-maven-plugin</artifactId>
                 <version>${munit.version}</version>
@@ -97,12 +97,28 @@
                     </coverage>
                 </configuration>
             </plugin>
+			<plugin>
+			    <groupId>org.mule.tools</groupId>
+			    <artifactId>maven-mule-plugin</artifactId>
+			    <version>1.8</version>
+			    <extensions>true</extensions>
+			    <configuration>
+			        <exclusions>
+			            <exclusion>
+			                <groupId>org.mule</groupId>
+			                <artifactId>mule-core</artifactId>
+			            </exclusion>
+			        </exclusions>
+			        <filterAppDirectory>true</filterAppDirectory>
+			        <copyToAppsDirectory>true</copyToAppsDirectory>                    
+			    </configuration>
+			</plugin>
         </plugins>
-	<testResources>
+		<testResources>
             <testResource>
                 <directory>src/test/munit</directory>
             </testResource>
-        <testResource>
+        	<testResource>
                 <directory>src/test/resources</directory>
             </testResource>
         </testResources>
