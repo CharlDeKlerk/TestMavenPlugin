@@ -14,8 +14,9 @@
 
 		<mule.version>3.7.0</mule.version>
     	<mule.tools.version>1.1</mule.tools.version>
-	<munit.version>1.1.0</munit.version>
-    <mule.munit.support.version>3.7.1</mule.munit.support.version>
+		<project.scm.id>git</project.scm.id>
+		<munit.version>1.1.0</munit.version>
+    	<mule.munit.support.version>3.7.1</mule.munit.support.version>
     </properties>
 
 	<scm>
