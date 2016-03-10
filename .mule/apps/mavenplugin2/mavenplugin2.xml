@@ -9,7 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8061" doc:name="HTTP Listener Configuration"/>
     <flow name="mavenplugin2Flow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
-        <set-payload value="something maveny" doc:name="Set Payload"/>
-        <logger level="INFO" doc:name="Logger"/>
+        <set-payload value="This is ${env.message}" doc:name="Set Payload"/>
     </flow>
 </mule>
